@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(24, 144, 204);
+    color:white;
+}
+.btn {
+    background-color: rgb(226, 253, 90);
+    color:aqua;
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    left: 46%;
+    margin-right:auto;
+    margin-top: 12px;
+    
+    
+}
+.form-control {
+    width: 300px;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.citySearch {
+    width: 100%;
+    margin: 100px auto 0;
+    text-align: center;
+}
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+  }
+  
+  .weather-card {
+
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(19, 19, 153);
+    color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .temperature {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 10px;
+  }
