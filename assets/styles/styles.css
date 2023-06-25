@@ -33,8 +33,7 @@ body {
 .weather-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 12%;
+    margin-top: 22%;
   }
   
   .weather-card {
