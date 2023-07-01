@@ -5,6 +5,9 @@ function celsiusToFahrenheit(celsius) {
     return fahrenheit.toFixed(0);
   }
 
+  //var searchCity = document.getElementById("text-city").value.trim();
+  
+
 async function fiveDayForecast(){
     var searchCity = document.getElementById("text-city").value.trim();
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?units=metric&q=${searchCity}&appid=${apiKey}`;
@@ -33,6 +36,78 @@ async function fiveDayForecast(){
     document.querySelector(".temperature-5").innerHTML = fahrenheit + "°F";
     document.querySelector(".description-5").innerHTML = data.list[4].weather[0].main;
     
+    const weatherIcon = document.querySelector(".weather-icon");
+    
+    if(data.list[1].weather[0].main == "Clouds"){
+        weatherIcon= "styles/images/cloudy.png";
+    }
+    else if(data.list[1].weather[0].main == "Clear"){
+        weatherIcon = "styles/images/clear.png";
+    }
+    else if(data.list[1].weather[0].main == "Rain"){
+        weatherIcon = "styles/images/rain.png";
+    }
+    else if(data.list[1].weather[0].main == "Sunny"){
+        weatherIcon = "styles/images/sunny.png";
+    }
+    else if(data.list[1].weather[0].main == "Snow"){
+        weatherIcon= "images/snow.png";
+    }
+
+    
+    if(data.list[2].weather[0].main == "Clouds"){
+        weatherIcon.src = "images/cloudy.png";
+    }
+    else if(data.list[2].weather[0].main == "Clear"){
+        weatherIcon.src = "images/clear.png";
+    }
+    else if(data.list[2].weather[0].main == "Rain"){
+        weatherIcon.src = "images/rain.png";
+    }
+    else if(data.list[2].weather[0].main == "Sunny"){
+        weatherIcon.src = "images/sunny.png";
+    }
+    else if(data.list[2].weather[0].main == "Snow"){
+        weatherIcon.src = "images/snow.png";
+    }
+
+   
+    if(data.list[3].weather[0].main == "Clouds"){
+        weatherIcon.src = "./styles/images/cloudy.png";
+    }
+    else if(data.list[3].weather[0].main == "Clear"){
+        weatherIcon.src = "images/clear.png";
+    }
+    else if(data.list[3].weather[0].main == "Rain"){
+        weatherIcon.src = "images/rain.png";
+    }
+    else if(data.list[3].weather[0].main == "Sunny"){
+        weatherIcon.src = "images/sunny.png";
+    }
+    else if(data.list[3].weather[0].main == "Snow"){
+        weatherIcon.src = "images/snow.png";
+    }
+
+    
+    if(data.list[4].weather[0].main == "Clouds"){
+        weatherIcon.src = "images/cloudy.png";
+    }
+    else if(data.list[4].weather[0].main == "Clear"){
+        weatherIcon.src = "images/clear.png";
+    }
+    else if(data.list[4].weather[0].main == "Rain"){
+        weatherIcon.src = "images/rain.png";
+    }
+    else if(data.list[4].weather[0].main == "Sunny"){
+        weatherIcon.src = "images/sunny.png";
+    }
+    else if(data.list[4].weather[0].main == "Snow"){
+        weatherIcon.src = "images/snow.png";
+    }
+
+
+
+
 }  
 
 async function checkWeather(){
@@ -53,9 +128,9 @@ async function checkWeather(){
   
 
   
-
-
 }
+
+
 fiveDayForecast();
 checkWeather();
 
