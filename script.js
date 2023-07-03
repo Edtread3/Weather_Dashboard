@@ -38,71 +38,72 @@ async function fiveDayForecast(){
     
     const weatherIcon = document.querySelector(".weather-icon");
     
-    if(data.list[1].weather[0].main == "Clouds"){
-        weatherIcon= "styles/images/cloudy.png";
+    const weatherImageTwo = document.getElementById("weather-icon-two");
+    if(data.list[1].weather[0].main == 'Clouds'){
+        weatherIcon.src = "./Assets/images/cloudy.png";
     }
-    else if(data.list[1].weather[0].main == "Clear"){
-        weatherIcon = "styles/images/clear.png";
+    else if(data.list[1].weather[0].main == 'Clear'){
+        weatherIcon.src = "./Assets/images/clear.png";
     }
-    else if(data.list[1].weather[0].main == "Rain"){
-        weatherIcon = "styles/images/rain.png";
+    else if(data.list[1].weather[0].main == 'Rain'){
+        weatherIcon.src = "./Assets/images/rain.png";
     }
-    else if(data.list[1].weather[0].main == "Sunny"){
-        weatherIcon = "styles/images/sunny.png";
+    else if(data.list[1].weather[0].main == 'Sunny'){
+        weatherIcon.src = "./Assets/images/sunny.png";
     }
-    else if(data.list[1].weather[0].main == "Snow"){
-        weatherIcon= "images/snow.png";
+    else if(data.list[1].weather[0].main == 'Snow'){
+        weatherIcon.src = "./Assets/images/snow.png";
     }
 
-    
+    const weatherImageThree = document.getElementById("weather-icon-three"); 
     if(data.list[2].weather[0].main == "Clouds"){
-        weatherIcon.src = "images/cloudy.png";
+        weatherIcon.src = "./Assets/images/cloudy.png";
     }
     else if(data.list[2].weather[0].main == "Clear"){
-        weatherIcon.src = "images/clear.png";
+        weatherIcon.src = "./Assets/images/clear.png";
     }
     else if(data.list[2].weather[0].main == "Rain"){
-        weatherIcon.src = "images/rain.png";
+        weatherIcon.src = "./Assets/images/rain.png";
     }
     else if(data.list[2].weather[0].main == "Sunny"){
-        weatherIcon.src = "images/sunny.png";
+        weatherIcon.src = "./Assets/images/sunny.png";
     }
     else if(data.list[2].weather[0].main == "Snow"){
-        weatherIcon.src = "images/snow.png";
+        weatherIcon.src = "./Assets/images/snow.png";
     }
 
-   
+    const weatherImageFour = document.getElementById("weather-icon-four");   
     if(data.list[3].weather[0].main == "Clouds"){
-        weatherIcon.src = "./styles/images/cloudy.png";
+        weatherIcon.src = "./Assets/images/cloudy.png";
     }
     else if(data.list[3].weather[0].main == "Clear"){
-        weatherIcon.src = "images/clear.png";
+        weatherIcon.src = "./Assets/images/clear.png";
     }
     else if(data.list[3].weather[0].main == "Rain"){
-        weatherIcon.src = "images/rain.png";
+        weatherIcon.src = "./Assets/images/rain.png";
     }
     else if(data.list[3].weather[0].main == "Sunny"){
-        weatherIcon.src = "images/sunny.png";
+        weatherIcon.src = "./Assets/images/sunny.png";
     }
     else if(data.list[3].weather[0].main == "Snow"){
-        weatherIcon.src = "images/snow.png";
+        weatherIcon.src = "./Assets/images/snow.png";
     }
 
-    
+    const weatherImageFive = document.getElementById("weather-icon-five");    
     if(data.list[4].weather[0].main == "Clouds"){
-        weatherIcon.src = "images/cloudy.png";
+        weatherIcon.src = "./Assets/images/cloudy.png";
     }
     else if(data.list[4].weather[0].main == "Clear"){
-        weatherIcon.src = "images/clear.png";
+        weatherIcon.src = "./Assets/images/clear.png";
     }
     else if(data.list[4].weather[0].main == "Rain"){
-        weatherIcon.src = "images/rain.png";
+        weatherIcon.src = "./Assets/images/rain.png";
     }
     else if(data.list[4].weather[0].main == "Sunny"){
-        weatherIcon.src = "images/sunny.png";
+        weatherIcon.src = "./Assets/images/sunny.png";
     }
     else if(data.list[4].weather[0].main == "Snow"){
-        weatherIcon.src = "images/snow.png";
+        weatherIcon.src = "./Assets/images/snow.png";
     }
 
 
